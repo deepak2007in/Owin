@@ -1,5 +1,5 @@
 ﻿using Microsoft.Owin.Hosting;
-using OwinSample;
+using OwinWebApi;
 using System;
 
 namespace CustomOwinHost
