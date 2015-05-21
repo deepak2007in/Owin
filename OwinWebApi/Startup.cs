@@ -1,4 +1,5 @@
 ﻿using Owin;
+using System.Web.Http;
 
 namespace OwinWebApi
 {
@@ -6,7 +7,8 @@ namespace OwinWebApi
     {
         public void Configuration(IAppBuilder app)
         {
-            var config = new MyHttpConfiguration();
+            var config = new HttpConfiguration();
+            config.Routes.MapHttpRoute(name: "DefaultApi", routeTemplate: "api/{controller}/{id}", defaults: new { id = RouteParameter.Optional });
             app.UseWebApi(config);
         }
     }

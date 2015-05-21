@@ -2,7 +2,7 @@
 using Newtonsoft.Json.Serialization;
 using System.Web.Http;
 
-namespace OwinWebApi
+namespace OwinSample
 {
     public class MyHttpConfiguration : HttpConfiguration
     {

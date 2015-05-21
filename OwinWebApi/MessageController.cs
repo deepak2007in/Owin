@@ -6,7 +6,7 @@ namespace OwinWebApi
     {
         public string Text { get; set; }
     }
-    class MessageController : ApiController
+    public class MessageController : ApiController
     {
         public Greeting Get()
         {
