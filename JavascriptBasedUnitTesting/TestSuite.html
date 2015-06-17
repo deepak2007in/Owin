@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Test Suite</title>
+    <script type="text/javascript" src="../app/jsUnitCore.js"></script>
+    <script src="TestSuite.js"></script>
+    <script type="text/javascript">
+        function testRender() {
+            var buttonStub = {};
+            var balanceStub = {};
+            var reelsStub = [{}, {}, {}];
+            var randomNumbers = [2, 1, 3];
+
+            var randomStubs = function () {
+                return randomNumbers.shift();
+            };
+
+            var slotMachine = new SlotMachine(buttonStub, balanceStub, reelsStub, randomStubs);
+            slotMachine.render();
+
+            assertEquals('Pay to play', buttonStub.value);
+            assertTrue(buttonStub.disabled);
+            assertEquals(0, balanceStub.innerHTML);
+            assertEquals('images/2.jpg', reelsStub[0].src);
+            assertEquals('images/1.jpg', reelsStub[1].src);
+            assertEquals('images/3.jpg', reelsStub[2].src);
+        };
+    </script>
+</head>
+<body>
+
+</body>
+</html>
