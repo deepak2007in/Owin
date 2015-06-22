@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\jsUnitCore.js" />
+    <Content Include="CasperSample.js" />
     <Content Include="TestSuite.html" />
     <Content Include="TestSuite.js" />
     <Content Include="Web.config" />
