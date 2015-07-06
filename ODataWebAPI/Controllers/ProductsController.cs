@@ -1,4 +1,7 @@
-﻿namespace ODataWebAPI.Controllers
+﻿// http://localhost:53687/Products?$top=2
+// http://localhost:53687/Products?$top=2&$filter=(Prize%20gt%2035)
+// http://localhost:53687/Products?$top=2&$filter=(Prize%20gt%2035)&$orderby=Prize
+namespace ODataWebAPI.Controllers
 {
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
