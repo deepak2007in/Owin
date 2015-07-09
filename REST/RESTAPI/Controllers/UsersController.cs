@@ -6,31 +6,31 @@ namespace RESTAPI.Controllers
 {
     public class UsersController : ApiController
     {
-        [Route("{id:long}", Name = "GetUserRoute")]
+        [Route("api/users/{id:long}", Name = "GetUserRoute")]
         public Task Get(long id)
         {
             throw new NotImplementedException();
         }
 
-        [Route("", Name = "AddUserRoute")]
+        [Route("api/users", Name = "AddUserRoute")]
         public IHttpActionResult Post(User user)
         {
             throw new NotImplementedException();
         }
 
-        [Route("{id:long}", Name = "UpdateUserRoute")]
+        [Route("api/users/{id:long}", Name = "UpdateUserRoute")]
         public IHttpActionResult Put(long id, User user)
         {
             throw new NotImplementedException();
         }
 
-        [Route("{id:long}", Name = "PartialUpdateUserRoute")]
+        [Route("api/users/{id:long}", Name = "PartialUpdateUserRoute")]
         public IHttpActionResult Patch(long id, User user)
         {
             throw new NotImplementedException();
         }
 
-        [Route("{id:long}", Name = "DeleteUserRoute")]
+        [Route("api/users/{id:long}", Name = "DeleteUserRoute")]
         public IHttpActionResult Delete(long id)
         {
             throw new NotImplementedException();

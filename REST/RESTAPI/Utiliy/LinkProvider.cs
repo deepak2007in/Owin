@@ -7,7 +7,7 @@
     {
         public static string CreateSelfLink(Task task)
         {
-            throw new NotImplementedException();
+            return string.Empty;
         }
 
         public static string CreateSelfLink(User task)
