@@ -10,6 +10,16 @@
     public class TasksController : ApiController
     {
         /*
+        GET http://localhost:63776/api/tasks HTTP/1.1
+        Host: localhost:63776
+        */
+        [Route("api/tasks", Name = "GetTaskCollectionRoute")]
+        public TaskCollectionResponse Get()
+        {
+            return new TaskCollectionResponse { Tasks = DataProvider.Tasks };
+        }
+
+        /*
         GET http://localhost:63776/api/tasks/2 HTTP/1.1
         Host: localhost:63776
         */
