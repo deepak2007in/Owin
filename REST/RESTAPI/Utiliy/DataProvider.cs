@@ -24,7 +24,7 @@
             {
                     new Task {Id = 1, Name = "Design", Status = "Started", Assignee = new List<User>(new[] {Users[1], Users[3]})},
                     new Task {Id = 2, Name = "Coding", Status = "Pending", Assignee = new List<User>(new[] {Users[0], Users[2]})},
-                    new Task {Id = 3, Name = "Testing", Status = "Pending", Assignee = new List<User>(new[] {Users[3], Users[6]})},
+                    new Task {Id = 3, Name = "Testing", Status = "Pending", Assignee = new List<User>(new[] {Users[3], Users[5]})},
                     new Task {Id = 4, Name = "Deployment", Status = "Pending", Assignee = new List<User>(new[] {Users[4], Users[5]})},
             });
         }
