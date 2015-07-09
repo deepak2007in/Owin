@@ -16,7 +16,9 @@
         [Route("api/tasks", Name = "GetTaskCollectionRoute")]
         public TaskCollectionResponse Get()
         {
-            return new TaskCollectionResponse { Tasks = DataProvider.Tasks };
+            var collection = new TaskCollectionResponse { Tasks = DataProvider.Tasks };
+            LinkProvider.AddLinks(collection: collection);
+            return collection;
         }
 
         /*
@@ -26,7 +28,9 @@
         [Route("api/tasks/{id:int}", Name = "GetTaskByIdRoute")]
         public Task Get(int id)
         {
-            return DataProvider.Tasks.FirstOrDefault(task => task.Id == id);
+            var entity = DataProvider.Tasks.FirstOrDefault(task => task.Id == id);
+            LinkProvider.AddLinks(task: entity);
+            return entity;
         }
 
         /*
@@ -36,7 +40,9 @@
         [Route("api/tasks/{name:alpha}", Name = "GetTaskByNameRoute")]
         public Task Get(string name)
         {
-            return DataProvider.Tasks.FirstOrDefault(task => task.Name == name);
+            var entity = DataProvider.Tasks.FirstOrDefault(task => task.Name == name);
+            LinkProvider.AddLinks(task: entity);
+            return entity;
         }
 
         /*
