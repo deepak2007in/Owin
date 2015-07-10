@@ -7,6 +7,9 @@
     using RESTAPI.Models;
     using RESTAPI.Utiliy;
 
+    // Valid: Authorization: Basic YmhvZ2c6aWdub3JlZA==
+    // Invalid: Authorization: Basic Basic amRvZTppZ25vcmVk
+    [Authorize(Roles = "Manager")]
     public class TasksController : ApiController
     {
         /*

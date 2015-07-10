@@ -101,6 +101,8 @@
     <Compile Include="Models\TaskUsersCollectionResponse.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\BasicAuthenticationMessageHandler.cs" />
+    <Compile Include="Security\BasicSecurityService.cs" />
     <Compile Include="Utiliy\DataProvider.cs" />
     <Compile Include="Utiliy\LinkProvider.cs" />
   </ItemGroup>
