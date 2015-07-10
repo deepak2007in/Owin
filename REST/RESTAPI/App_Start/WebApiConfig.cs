@@ -12,6 +12,7 @@ namespace RESTAPI
         {
             // Web API configuration and services
             config.MessageHandlers.Add(new BasicAuthenticationMessageHandler());
+            config.MessageHandlers.Add(new TaskDataSecurityMessageHandler());
 
             // Web API routes
             config.MapHttpAttributeRoutes();

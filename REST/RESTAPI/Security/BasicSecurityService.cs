@@ -44,7 +44,7 @@ namespace RESTAPI.Security
             identity.AddClaim(new Claim(ClaimTypes.Surname, user.Surname));
             identity.AddClaim(new Claim(ClaimTypes.Role, "Manager"));
             identity.AddClaim(new Claim(ClaimTypes.Role, "Senior"));
-            identity.AddClaim(new Claim(ClaimTypes.Role, "Junior"));
+            identity.AddClaim(new Claim(ClaimTypes.Role, "Director"));
             return new ClaimsPrincipal(identity: identity);
         }
 
