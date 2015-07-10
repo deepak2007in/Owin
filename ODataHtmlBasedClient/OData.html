@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>OData Client</title>
+    <script src="Scripts/odatajs-4.0.0.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        var serviceRoot = 'http://services.odata.org/V4/TripPinServiceRW/';
+        var headers = { 'Content-Type': 'application/json', Accept: 'application/json' };
+        var request = {
+            requestUri: serviceRoot + 'People',
+            method: 'GET',
+            headers: headers,
+            data: null
+        };
+        odatajs.oData.request(
+            request,
+            function (data, response) {
+                var people = data.value;
+            },
+            function (err) {
+                alert('Fail: ' + err.message);
+            }
+        );
+    </script>
+
+</body>
+</html>

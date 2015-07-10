@@ -11,7 +11,7 @@ namespace RestClientWithSampleOData
     {
         static void Main(string[] args)
         {
-            CallCustomRest();
+            CallBuiltInRest();
             Console.ReadLine();
         }
 

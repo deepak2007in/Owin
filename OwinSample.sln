@@ -19,12 +19,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavascriptBasedUnitTesting"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPL", "TPL\TPL.csproj", "{F2034C97-81E0-4744-94E6-2D98BB925E67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODataWebAPI", "ODataWebAPI\ODataWebAPI.csproj", "{FE16843B-9812-4FE0-903F-68B36668918B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODataClient", "ODataClient\ODataClient.csproj", "{C2B4627A-5C6E-49A6-91C0-FA6E2C0F9670}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestClientWithSampleOData", "RestClientWithSampleOData\RestClientWithSampleOData.csproj", "{92EEBF5C-CA68-45B1-9A14-2F7CABE841C8}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F45B2732-B801-4B74-9CB1-D6C094219DC3}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\packages.config = .nuget\packages.config
@@ -69,18 +63,6 @@ Global
 		{F2034C97-81E0-4744-94E6-2D98BB925E67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2034C97-81E0-4744-94E6-2D98BB925E67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2034C97-81E0-4744-94E6-2D98BB925E67}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FE16843B-9812-4FE0-903F-68B36668918B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE16843B-9812-4FE0-903F-68B36668918B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE16843B-9812-4FE0-903F-68B36668918B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE16843B-9812-4FE0-903F-68B36668918B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C2B4627A-5C6E-49A6-91C0-FA6E2C0F9670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C2B4627A-5C6E-49A6-91C0-FA6E2C0F9670}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C2B4627A-5C6E-49A6-91C0-FA6E2C0F9670}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C2B4627A-5C6E-49A6-91C0-FA6E2C0F9670}.Release|Any CPU.Build.0 = Release|Any CPU
-		{92EEBF5C-CA68-45B1-9A14-2F7CABE841C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92EEBF5C-CA68-45B1-9A14-2F7CABE841C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92EEBF5C-CA68-45B1-9A14-2F7CABE841C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{92EEBF5C-CA68-45B1-9A14-2F7CABE841C8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3F381832-8DAA-4ED6-85AF-C996785B8605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3F381832-8DAA-4ED6-85AF-C996785B8605}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F381832-8DAA-4ED6-85AF-C996785B8605}.Release|Any CPU.ActiveCfg = Release|Any CPU
