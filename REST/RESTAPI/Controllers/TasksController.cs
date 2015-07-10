@@ -9,6 +9,7 @@
 
     // Valid: Authorization: Basic YmhvZ2c6aWdub3JlZA==
     // Invalid: Authorization: Basic Basic amRvZTppZ25vcmVk
+    // Valid: Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjb3JwIiwiYXVkIjoiaHR0cDovL3d3dy5leGFtcGxlLmNvbSIsIm5iZiI6MTQzNjUyMjUxMywiZXhwIjoxNzUyMTQxNzEzLCJ1bmlxdWVfbmFtZSI6ImJob2dnIiwiZ2l2ZW5fbmFtZSI6IkJvc3MiLCJmYW1pbHlfbmFtZSI6IkhvZ2ciLCJyb2xlIjpbIk1hbmFnZXIiLCJTZW5pb3JXb3JrZXIiLCJKdW5pb3JXb3JrZXIiXX0.mLFtYRKoZYXrkLDZ1sXxABxlCl_UTJFrVQlLrGFJV5E
     [Authorize(Roles = "Manager")]
     public class TasksController : ApiController
     {

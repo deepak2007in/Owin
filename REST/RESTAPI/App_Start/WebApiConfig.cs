@@ -1,4 +1,5 @@
-﻿using RESTAPI.Security;
+﻿using JwtAuthForWebAPI;
+using RESTAPI.Security;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +12,16 @@ namespace RESTAPI
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-            config.MessageHandlers.Add(new BasicAuthenticationMessageHandler());
-            config.MessageHandlers.Add(new TaskDataSecurityMessageHandler());
+            // config.MessageHandlers.Add(new BasicAuthenticationMessageHandler());
+            // config.MessageHandlers.Add(new TaskDataSecurityMessageHandler());
+            var builder = new SecurityTokenBuilder();
+            var reader = new ConfigurationReader();
+            config.MessageHandlers.Add(new JwtAuthenticationMessageHandler
+            {
+                AllowedAudience = reader.AllowedAudience,
+                Issuer = reader.Issuer,
+                SigningToken = builder.CreateFromKey(reader.SymmetricKey)
+            });
 
             // Web API routes
             config.MapHttpAttributeRoutes();
