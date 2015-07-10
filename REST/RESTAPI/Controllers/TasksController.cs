@@ -20,7 +20,7 @@
         public TaskCollectionResponse Get()
         {
             var collection = new TaskCollectionResponse { Tasks = DataProvider.Tasks };
-            LinkProvider.AddLinks(collection: collection);
+            collection.AddLinks();
             return collection;
         }
 
@@ -32,7 +32,7 @@
         public Task Get(int id)
         {
             var entity = DataProvider.Tasks.FirstOrDefault(task => task.Id == id);
-            LinkProvider.AddLinks(task: entity);
+            entity.AddLinks();
             return entity;
         }
 

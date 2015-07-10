@@ -8,7 +8,7 @@
         const string baseAddress = "http://localhost:63776/api/";
 
         #region Task Collection Link
-        public static void AddLinks(TaskCollectionResponse collection)
+        public static void AddLinks(this TaskCollectionResponse collection)
         {
             AddSelfLink(collection: collection);
             AddCreateNewTaskLink(collection: collection);
@@ -34,7 +34,7 @@
 
         #region Task Link
 
-        public static void AddLinks(Task task)
+        public static void AddLinks(this Task task)
         {
             AddSelfLink(task: task);
             AddLinksToChildObjects(task: task);
