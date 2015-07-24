@@ -10,6 +10,7 @@
         #region Task Collection Link
         public static void AddLinks(this TaskCollectionResponse collection)
         {
+            collection.Links.Clear();
             AddSelfLink(collection: collection);
             AddCreateNewTaskLink(collection: collection);
             AddLinksToChildObjects(collection: collection);
@@ -36,6 +37,7 @@
 
         public static void AddLinks(this Task task)
         {
+            task.Links.Clear();
             AddSelfLink(task: task);
             AddLinksToChildObjects(task: task);
             AddReplaceUsersLink(task: task);
@@ -55,6 +57,7 @@
         }
         private static void AddLinksToChildObjects(Task task)
         {
+            task.Assignee.ForEach(x => x.Links.Clear());
             task.Assignee.ForEach(x => AddSelfLink(x));
         }
         private static void AddReplaceUsersLink(Task task)
